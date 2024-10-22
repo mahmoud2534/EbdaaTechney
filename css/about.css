@@ -1,0 +1,378 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:#365897;
+    --background-color: rgb(241, 241, 241);
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+/* nav section */
+.navbar{
+    z-index: 1;
+}
+.active:hover{
+    border-bottom: 1px solid var(--main-color);
+}
+.navbar .navbar-brand{
+    font-family: cursive;
+    text-decoration: none;
+}
+.navbar img{
+    width: 38px;
+    margin-right: 5px;
+}
+.navbar ul{
+    margin-left: 50px;
+}
+.navbar ul li{
+    font-size: 20px;
+    margin-left: 25px;
+}
+.navbar ul li a:hover{
+    color: rgb(124, 124, 187);
+    cursor: pointer;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: gray;
+    border-bottom: 0px solid blue;
+}
+.navbar .call-us{
+    margin-right: 150px;
+    display: flex;
+}
+.navbar .call-us p{
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: blue;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.navbar .call-us p:hover{
+    color: #365897;
+}
+.navbar .call-us span b{
+    margin-left: 10px;
+}
+.navbar .active{
+    color: #365897;
+    font-weight: bold;
+    border-bottom: 1px solid #365897;
+}
+.Whats{
+    margin-top: 80px;
+    background-color: #365897;
+    padding: 3rem .5rem;
+    display: none;
+}
+.Whats .content{
+    display: flex;
+    justify-content: space-between;
+}
+.Whats img{
+    width: 35px;
+}
+.Whats .content input{
+    width: 500px;
+    border: none;
+    outline: none;
+    padding:0 0 5px 5px ;
+    border-bottom: 1px solid white;
+}
+.Whats .content input::placeholder{
+    color: white;
+    padding-bottom: 3px;
+}
+.Whats .Qustion a {
+    margin-right: 30px;
+    border: 1px solid white;
+    color: white;
+}
+.Whats .Qustion a:hover{
+    background-color: white;
+    color: #365897;
+}
+@media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .Whats .content input{
+            width: 300px;
+        }
+    }
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .Whats .content{
+            display: block;
+            margin-left: 0px;
+            text-align: center;
+        }
+        .Whats .content input{
+            width: 200px;
+            margin: 30px 0;
+        }
+        .Whats .logo{
+            margin-left: -20px;
+        }
+        .products .left-side{
+            display: none;
+        }
+    }
+/* landing section */
+.about{
+    padding:80px 250px;
+    background-color: var(--background-color);
+}
+.about .about-content{
+    padding-top:100px ;
+}
+.about .about-content h3{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.about .about-content p{
+    font-size: 19px;
+}
+.about .about-content p:nth-child(3){
+    color: rgb(77, 77, 77);
+}
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .about{
+            padding:80px 0px;
+        }
+        .navbar .call-us{
+            display: none;
+        }
+    }
+@media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .about{
+            padding:80px 50px;
+        }
+        .video video{
+            width: 500px;
+            height: 500px;
+            margin-right: 170px;
+        }
+    }   
+/* video section */
+.video{
+    background-color: var(--background-color);
+}
+.video video{
+    width: 1000px;
+    height: 500px;
+    margin-left: 170px;
+}
+.video .about {
+    padding-top: 0;
+}
+.about-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-btn a{
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: var(--main-color);
+}
+.about-btn a:last-child{
+    color:black ;
+    padding: 1rem 1.8rem;
+}
+.about-btn a:hover{
+    color: white;
+    
+}
+.about-btn a:last-child:hover{
+    color: white;
+}
+@media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .video video{
+            width: 740px;
+            height: 500px;
+            margin-left: 0px;
+        }
+        
+    }  
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .video video{
+            width: 370px;
+            height: 300px;
+            margin-left: 0;
+        }
+    }
+    
+.whats{
+    background-color: #365897;
+    padding: 3rem .5rem;
+    display: none;
+}
+.whats .content{
+    display: flex;
+    justify-content: space-between;
+}
+.whats img{
+    width: 35px;
+}
+.whats .content input{
+    width: 500px;
+    border: none;
+    outline: none;
+    padding:0 0 5px 5px ;
+    border-bottom: 1px solid white;
+}
+.whats .content input::placeholder{
+    color: white;
+    padding-bottom: 3px;
+}
+.whats .qustion a {
+    margin-right: 30px;
+    border: 1px solid white;
+    color: white;
+}
+.whats .qustion a:hover{
+    background-color: white;
+    color: #365897;
+}
+#contactBtn:hover{
+    color: white;
+}
+@media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .whats .content input{
+            width: 300px;
+        }
+    }
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .whats .content{
+            display: block;
+            margin-left: 0px;
+            text-align: center;
+        }
+        .whats .content input{
+            width: 200px;
+            margin: 30px 0;
+        }
+        .whats .logo{
+            margin-left: -20px;
+        }
+    }
+    .srtoklit{
+        padding: 3rem .5rem;
+        display: none;
+    }
+    .srtoklit .content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .srtoklit img{
+        width: 35px;
+    }
+    .srtoklit .content input{
+        width: 500px;
+        border: none;
+        outline: none;
+        padding:0 0 5px 5px ;
+        border-bottom: 1px solid white;
+    }
+    .srtoklit .content input::placeholder{
+        color: white;
+        padding-bottom: 3px;
+    }
+    .srtoklit .strok a {
+        margin-right: 30px;
+        border: 1px solid white;
+        color: white;
+    }
+    .srtoklit .strok a:hover{
+        background-color: white;
+        color: #365897;
+    }
+    @media only screen 
+        and (min-device-width: 768px) 
+        and (max-device-width: 1024px) 
+        and (-webkit-min-device-pixel-ratio: 1) {
+            .srtoklit .content input{
+                width: 300px;
+            }
+        }
+        @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            .srtoklit .content{
+                display: block;
+                margin-left: 0px;
+                text-align: center;
+            }
+            .srtoklit .content input{
+                width: 200px;
+                margin: 30px 0;
+            }
+            .srtoklit .logo{
+                margin-left: -20px;
+            }
+        }
+/* footer section */
+.footer a{
+    text-decoration: none;
+    color: gray;
+}   
+.footer .logo3{
+    width: 120px;
+    margin-bottom: 40px;
+}
+.footer .logo{
+    margin-left: 50px;
+}
+.footer .logo p{
+    font-size: 16px;
+}
+.footer .categories{
+    margin-top: 40px;
+    text-align: start;
+    margin-left: 50px;
+}
+.footer .categories .active{
+    margin-bottom: 20px;
+}
+.footer .categories li{
+    margin-bottom: 20px;
+}

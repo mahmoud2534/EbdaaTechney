@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300;1,900&display=swap" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- jquary file -->
+    <link rel="icon" href="./img/logo2.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Ebdaa techney</title>
+</head>
+<body>
+    <!-- start header section -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed bg-white w-100 ">
+        <div class="container-fluid">
+            <div class="logo">
+                <img class="mb-3"  src="./img/logo3.png" alt="">
+                <a class="navbar-brand fs-2 fw-bold text-primary" href="./index.html">Ebdaa Techney</a>
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto  mb-lg-0">
+            <li class="nav-item">
+                <a class="active fs-6 " aria-current="page" href="#">Home
+                    <span class="homes"></span>
+                </a>
+            </li>
+            <li class="nav-item dropdown fs-6">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+                </a>
+                <ul id="drop" class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <li ><a class="dropdown-item fs-6" href="#products">Excavator</a></li>
+                    <li><a class="dropdown-item fs-6" href="#products1">Motorgraders</a></li>
+                    <li><a class="dropdown-item fs-6" href="#products3">Bulldozers</a></li>
+                    <li><a class="dropdown-item fs-6" href="#products5">Rollers</a></li>
+                    <li><a class="dropdown-item fs-6" href="#products6">Dozers</a></li>
+                    <li><a class="dropdown-item fs-6" href="#">Show all</a></li>
+                </ul>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a href="./about.html" class="fs-6 ">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="./contact.html" class="fs-6">Contact</a>
+            </li>
+            </ul>
+            <div class="call-us mt-3 ">
+                <p class=" fw-bold Button fs-5"><a><i class="fa-brands fa-whatsapp fs-4 "></i></a> Qustions ?</p>
+                <span>call us <b>+966 548 4518 548</b></span>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- end header section -->
+    <div class="whats">
+        <div class="content">
+            <div class="logo fw-bold text-white">
+                <img class="mb-1 mx-1 "  src="./img/logo3.png" alt="">Ebdaa Techney
+            </div>
+            <div class="input">
+                <input class=" text-light bg-transparent" type="text" placeholder="what is your qustion ?" />
+            </div>
+            <div class="qustion">
+                <a id="qustionBtn" type="submit" class="btn rounded-pill fw-bold" >Send<i class="fa-solid fa-paper-plane mx-1"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- start landing section -->
+    <div class="landing">
+        <div class="container-fluid d-flex justify-content-between">
+            <ul class="tabs list-unstyled  ">
+                <li id="all"><a >All</a></li>
+                <li id="excavator"><a >Excavator</a></li>
+                <li id="motorgrades"><a >Motorgrades</a></li>
+                <li id="bulldozers"><a >Bulldozers</a></li>
+                <li id="rollers"><a>Rollers</a></li>
+                <li id="whealloaders"><a >Whealloaders</a></li>
+                <li id="dozers"><a >Dozers</a></li>
+            </ul>
+            <div class="content">
+                <div class="cont-one ">
+                    <span id="excavator1" class="fs-6"><a >Excavator <i class="fa-solid fa-person-digging fs-4"></i></a></span>
+                    <span id="motorgrades1" class="fs-6"><a >Motorgrades <i class="fa-solid fa-truck-pickup fs-4"></i></a></span>
+                    <span id="bulldozers1" class="fs-6"><a >Bulldozers <i class="fa-solid fa-tractor fs-4"></i></a></span>
+                </div>
+                <div class="cont-one ">
+                    <span id="rollers1" class="fs-6"><a >Rollers Ca <i class="fa-solid fa-place-of-worship fs-4"></i></a></span>
+                    <span id="whealloaders1" class="fs-6"><a >Whealloaders <i class="fa-solid fa-truck-ramp-box fs-4"></i></a></span>
+                    <span id="dozers1" class="fs-6"><a >Dozers <i class="fa-solid fa-ferry fs-4"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end landing section -->
+    <!-- start Products section -->
+    <div id="products" class="products pt-5">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="left-side">
+                <label  for="customRange1" id="label" class="form-label fw-bold">Price range</label> 
+                <input type="range" class="form-range " id="customRange1">
+                <p class="mb-5">0$</p>
+                <label for="customRange1" class="form-label">Weight</label>
+                <input type="range" class="form-range" id="customRange1">
+                <p class="">0Kg</p>
+                <label for="customRange1" class="form-label">Hours</label>
+                <input type="range" class="form-range" id="customRange1">
+                <p class="">0 Hour</p>
+            </div>
+            <div class="right-side ">
+                <div id="tests" class="card" >
+                    <img  src="./img/one.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Caterpiller - 320GC</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text mb-5 text-secondary"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">125.99 $</p>
+                    </div>                </div>
+                <div id="repo" class="card" >
+                    <img src="./img/two.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Caterpiller - CA302</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text mb-5 text-secondary"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">245.99 $</p>
+                    </div>
+                </div>
+                <div id="repo" class="card" >
+                    <img src="./img/volvo.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Vovlo - 322D</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text mb-5 text-secondary"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">199.99 $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="products1" class="products pt-5">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="left-side">
+                
+            </div>
+            <div class="right-side ">
+                <div id="tests" class="card" >
+                    <img  src="./img/bull1.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Caterpiller - 320GC</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text mb-5 text-secondary"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">254.99 $</p>
+                    </div>
+                </div>
+                <div id="repo" class="card" >
+                    <img src="./img/bull2.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Caterpiller - CA302</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text mb-5 text-secondary"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">399.99 $</p>
+                    </div>
+                </div>
+                <div id="repo" class="card" >
+                    <img src="./img/bull3.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Caterpiller - 322D</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text mb-5 text-secondary"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">229.99 $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="products2" class="products pt-5">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="left-side">
+                
+            </div>
+            <div class="right-side">
+                <div class="card" >
+                    <img src="./img/four.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Case - 1110 EX-D</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text mb-5 text-secondary"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">149.99 $</p>
+                    </div>
+                </div>
+                <div id="repo"  class="card bg-warning" >
+                    <img src="./img/logo2.png " class="image" style="width: 60px" alt="">
+                    <h1 class="px-5 pt-5">
+                        Get 
+                        <br>
+                        Your
+                        <br>
+                        Offer
+                        <br>
+                        Today
+                    </h1>
+                    <div class="card-body">
+                        <p class="fs-5 mb-4">Don’t miss out on new <br> arrivals!</p>
+                        <div  class="btn1 fw-bold">
+                            <p  class="pt-1" ><a>Subscribe to the</a></p>
+                            <p class="stock" ><a >Stocklist</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="repo" class="card" >
+                    <img src="./img/five.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Dynapac - CC424HF</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text mb-5 text-secondary"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">229.99 $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe section -->
+    <div class="srtoklit bg-warning">
+        <div class="content">
+            <div class="logo fw-bold text-white">
+                <img class="mb-1 mx-1"  src="./img/logo3.png" alt="">Ebdaa Techney
+            </div>
+            <div class="input">
+                <input class=" text-light bg-transparent" type="text" placeholder="Enter your email" />
+            </div>
+            <div class="strok">
+                <a id="strokBtn" type="submit" class="btn rounded-pill fw-bold" >Subscribe</a>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe section -->
+    <div id="products3" class="products pt-5">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="left-side">
+                <span class="right-span" style="width:300px; "></span>
+            </div>
+            <div class="right-side ">
+                <div class="card" >
+                    <img src="./img/six.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Jcb - 3DX</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">119.99 $</p>
+                    </div>
+                </div>
+                <div id="repo" class="card" >
+                    <img src="./img/seaven.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Jcb - 3DX</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">239.99 $</p>
+                    </div>
+                </div>
+                <div id="repo" class="card" >
+                    <img src="./img/ten.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Caterpiller - 982M</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">199.99 $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="products4" class="products pt-5">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="left-side">
+                <span class="right-span" style="width:300px; "></span>
+            </div>
+            <div class="right-side">
+                <div class="card spcial" >
+                    <img src="./img/eight.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Jcb - 3DX</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">124.99 $</p>
+                    </div>
+                </div>
+                <div id="repo" class="card spcial" >
+                    <img src="./img/nine.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Jcb - 3DX</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">114.99 $</p>
+                    </div>
+                </div>
+                <div id="card" class="card" >
+                    <img src="./img/logo2.png " class="image" style="width: 60px" alt="">
+                    <h1 class="px-5 pt-5 text-white ">
+                        since 2020 <br>the best <br>service
+                    <div class="card-body">
+                        <p class="para">In 2020 Ebdaa Techney started as br a small company. Now, 2 years later, Ebdaa Techney is one of the global leading suppliers of used earthmoving and road equipment.</p>
+                        <a class="fs-5 btn2" href="./about.html">About us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="products5" class="products pt-5">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="left-side">
+                <span class="right-span" style="width:300px; "></span>
+            </div>
+            <div class="right-side ">
+                <div class="card" >
+                    <img src="./img/eleven.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Dypnac- CC425</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">199.99 $</p>
+                    </div>
+                </div>
+                <div id="repo" class="card" >
+                    <img src="./img/bomag.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Volvo- L220G</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5 text-secondary"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">399.99 $</p>
+                    </div>
+                </div>
+                <div id="repo" class="card" >
+                    <img src="./img/therteen.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Dypnac - CC424HF</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">249.99 $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="products6" class="products pt-5">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="left-side">
+                <span class="right-span" style="width:300px; "></span>
+            </div>
+            <div class="right-side ">
+                <div class="card" >
+                    <img src="./img/fourteen.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Kato- KR22H</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">298.99 $</p>
+                    </div>
+                </div>
+                
+                <div class="card" >
+                    <img src="./img/fifteen.jpg" class="card-img-top" alt="...">
+                    <span class="new fs-5 bg-warning text-black fw-bold ">New arrival</span>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 text-primary">Caterpiller - CS663E</h5>
+                        <p class="card-text"> Year <span class="hour">Hours</span> Refrence </p>
+                        <p class="card-text text-secondary mb-5"> 2022 <span class="hours"> 8</span> #253489 </p>
+                        <hr>
+                        <p class="mt-3 fs-5 text-secondary">Price</p>
+                        <p class="text-secondary fw-bold fs-5">99.99 $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- end Products section -->
+    <!-- start video ssection -->
+    <div id="video" class="video pb-5 ">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="left-side">
+                <span class="right-span" style="width:300px; "></span>
+            </div>
+            <div class="right-side">
+                <div class="text-content">
+                    <h2 class="heading"> 
+                        Heavy equipment <br> from Ebdaa Techney
+                    </h2>
+                    <p>
+                        The best quality earthmoving machinery and road <br> equipment available on the web,
+                        from pro brands <br> such as <span class="text-primary">Caterpillar</span>,<span class="text-primary"> Volvo</span> and<span class="text-primary"> Komatsu</span>.
+                    </p>
+                </div>
+                <div class="video-content">
+                    <video loop muted autoplay  src="./img/This is Smitma Heavy Equipment.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end video section -->
+    <!-- start social section -->
+        <div id="social" class="row social ">
+            <div class="col-md-6 col-lg-3">
+                <div class="call d-flex">
+                    <a href=""><i class="fa-solid fa-phone text-primary bg-white  fs-3"></i></a>
+                    <div class="call-us">
+                        <p class="first text-secondary fs-6">Call us</p>
+                        <p class="text-secondary fs-6">+96 548 4518 548</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="call d-flex">
+                    <a href=""><i class="fa-solid fa-envelope bg-primary text-white fs-3"></i></a>
+                    <div class="call-us">
+                        <p class="first text-secondary fs-6">Send email</p>
+                        <p class="text-secondary fs-6">ebdaa@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="call d-flex">
+                    <a href=""><i class="fa-brands fa-whatsapp  bg-success text-white fs-3"></i></a>
+                    <div class="call-us">
+                        <p class="first text-secondary fs-6" >Whatsapp</p>
+                        <p class="text-secondary fs-6">+96 548 4518 548</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="call d-flex">
+                    <a href=""><i class="fa-solid fa-comment fs-3 bg-warning text-white"></i></a>
+                    <div class="call-us">
+                        <p class="first text-secondary fs-6">live chat</p>
+                        <p class="text-secondary fs-6">Ebdaa Techney </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- end social section -->
+    <!-- start footer section -->
+    <div id="contact" class="footer text-white-50 pt-5 text-center text-md-start ">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+            <img class="mb-4" style="width: 80px;" src="./img/logo2.png" alt="">
+            <p class="lh-large text-secondary ">
+                Caterpillar
+            </p>
+            <div>
+                <p class="text-secondary fs-5"> Volvo Vc </p>
+            </div>
+            <p class="text-secondary fs-5"> Komatsu. </p>
+            <p class="text-secondary fs-5"> CAT. </p>
+            </div>
+            
+            <div class="col-md-6 col-lg-2">
+            <span class="text-secondary fw-bold fs-5 ">Categories</span>
+            <ul class="list-unstyled links lh-lg text-white-50">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./index.html">All Machines</a></li>
+                <li><a href="#portfolio">Dozers</a></li>
+                <li><a href="#products">Excavators</a></li>
+                <li><a href="#products1">Motorgraders</a></li>
+                <li><a href="#products3">Wheelloaders</a></li>
+            </ul>
+            
+            </div>
+            <div class="col-md-6 col-lg-2">
+            <span class="fw-bold text-secondary fs-5">About Us</span>
+            <ul class="list-unstyled  lh-lg ">
+                <li><a class="./contact.html" href="">Contact</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./home.html">Details</a></li>
+            </ul>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+            <span class="text-secondary fw-bold fs-5 ">Other</span>
+            <ul class="list-unstyled  lh-lg mb-5 ">
+                <li><a class="" href="./privacy.html">Privacy Statement</a></li>
+                <li><a href="./privacy.html">Cookie settings</a></li>
+            </ul>
+            <div class="foot mt-5">
+                <span class="text-secondary fw-bold">&copy; <span class="text-primary ">Ebdaa Techney</span> All right reversed</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- end footer section -->
+    <!-- javascript files -->
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+</html>

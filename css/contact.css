@@ -1,0 +1,456 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:#365897;
+    --background-color: rgb(241, 241, 241);
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+/* nav section */
+.navbar{
+    z-index: 1;
+}
+
+.active:hover{
+    border-bottom: 1px solid var(--main-color);
+}
+.navbar .navbar-brand{
+    font-family: cursive;
+    text-decoration: none;
+}
+.navbar img{
+    width: 38px;
+    margin-right: 5px;
+}
+.navbar ul{
+    margin-left: 50px;
+}
+.navbar ul li{
+    font-size: 20px;
+    margin-left: 25px;
+}
+.navbar ul li a:hover{
+    color: rgb(124, 124, 187);
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: gray;
+    border-bottom: 0px solid blue;
+}
+.navbar .call-us{
+    margin-right: 150px;
+    display: flex;
+}
+.navbar .call-us p{
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: blue;
+    cursor: pointer;
+    margin-top: -5px;
+}
+.navbar .active{
+    color: #365897;
+    font-weight: bold;
+    border-bottom: 1px solid #365897;
+}
+/* whats section */
+.whats{
+    margin-top: 80px;
+    background-color: #365897;
+    padding: 3rem .5rem;
+    display: none;
+}
+.whats .content{
+    display: flex;
+    justify-content: space-between;
+}
+.whats img{
+    width: 35px;
+}
+.whats .content input{
+    width: 500px;
+    border: none;
+    outline: none;
+    padding:0 0 5px 5px ;
+    border-bottom: 1px solid white;
+}
+.whats .content input::placeholder{
+    color: white;
+    padding-bottom: 3px;
+}
+.whats .qustion a {
+    margin-right: 30px;
+    border: 1px solid white;
+    color: white;
+}
+.whats .qustion a:hover{
+    background-color: white;
+    color: #365897;
+}
+@media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .whats .content input{
+            width: 300px;
+        }
+    }
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .whats .content{
+            display: block;
+            margin-left: 0px;
+            text-align: center;
+        }
+        .whats .content input{
+            width: 200px;
+            margin: 30px 0;
+        }
+        .whats .logo{
+            margin-left: -20px;
+        }
+        .products .left-side{
+            display: none;
+        }
+    }
+/* contact section */
+.contacting{
+    display: block;
+    padding: 100px 100px;
+    background-color: var(--background-color);
+}
+.contacting .contact-text{
+    padding: 10px 100px;
+    margin-left: -50px;
+    margin-bottom: 20px;
+}
+.contacting .contact-text h3{
+    font-size: 50px;
+}
+.contacting .image img{
+    width: 550px;
+    height: 450px;
+}
+.contacting iframe{
+    width: 500px;
+    height: 670px;
+}
+.contacting .contact-us{
+    display: flex;
+    margin-left: 30px;
+}
+.contacting .image .second{
+    margin-left: 150px;
+}
+.contacting a{
+    text-decoration: none;
+}
+
+/* start contact */
+.contact h1{
+    font-size: 50px;
+}
+.contact p{
+    font-size: 18px;
+    padding: 0 80px 0 50px;
+}
+.contact{
+    background-color: var(--background-color);
+    padding-bottom: 20px;
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1){
+    .contact p{
+        font-size: 18px;
+        padding: 0px;
+    }
+}
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2){
+    .contact p{
+        font-size: 18px;
+        padding:0;
+    }
+    .contact h1{
+        font-size: 50px;
+        margin-left: -50px;
+    }
+}
+.form1{
+    background-color:var(--background-color);
+    padding-left: 150px;
+    padding-bottom: 30px;
+}
+form .text #name 
+,#email{
+    width: 500px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 15px 15px ;
+    border-radius: 10px;
+    border: .1px solid black;
+    color:black;
+    margin-bottom: 5px;
+}
+form .text #name::placeholder
+,#email::placeholder{
+    color: black;
+}
+form .text #name{
+    margin-right: 25px;
+}
+form .text #email{
+    margin-left: 25px;
+}
+form .project input::placeholder{
+    color: black;
+}
+form .project input{
+    width: 1058px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px 15px ;
+    margin: 40px 0;
+    color:black;
+}
+form textarea{
+    width: 1060px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 15px ;
+    border: 1px solid black;
+    color:black;
+}
+form textarea::placeholder{
+    color: black;
+}
+.form1 .btn{
+    padding:.5rem 2rem ;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+
+/* footer section */
+.footer a{
+    text-decoration: none;
+    color: gray;
+}   
+.footer .logo3{
+    width: 120px;
+    margin-bottom: 40px;
+}
+.footer .logo{
+    margin-left: 50px;
+}
+.footer .logo p{
+    font-size: 16px;
+}
+.footer .categories{
+    margin-top: 40px;
+    text-align: start;
+    margin-left: 50px;
+}
+.footer .categories .active{
+    margin-bottom: 20px;
+}
+.footer .categories li{
+    margin-bottom: 20px;
+}
+/* mobil responsive */
+/* navbar section */
+@media (max-width:768px) {
+    .navbar .call-us{
+        display: none;
+    }
+    .navbar{
+        z-index: 2;
+    }
+}
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2){
+    form{
+        display: block;
+    }
+    form .text #name 
+    ,#email{
+        width: 370px;
+        padding: 3px 15px ;
+    }
+    form .text #name{
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    form .text #email{
+        margin-left: 0px;
+    }
+    form .project input{
+        width: 370px;
+        margin: 15px 0;
+    }
+    form textarea{
+        width: 370px;
+        margin: 0;
+    }
+}
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1){
+    form .text #name 
+    ,#email{
+        width: 350px;
+    }
+    form .project input{
+        width: 754px;
+        margin: 15px 0;
+    }
+    form textarea{
+        width:754px;
+        margin: 0;
+    }
+}
+/* contacting section */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1){
+    .contacting .contact-us{
+        display: block;
+        margin-left: 0;
+    }
+    .contacting .contact-text{
+        padding:0 50px;
+        margin-left: -50px;
+        margin-bottom: 20px;
+    }
+    .contacting .image img{
+        width: 570px;
+        height: 450px;
+    }
+    .contacting iframe{
+        width: 565px;
+        height: 400px;
+        margin-top: 20px;
+    }
+}
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2){
+    .contacting .contact-us{
+        display: block;
+        margin-left: 0;
+    }
+    .contacting{
+        padding: 80px 0 0 70px ;
+    }
+    .contacting .contact-text{
+        padding:0 0px;
+        margin-bottom: 20px;
+    }
+    .contacting .contact-img{
+        display: block;
+    }
+    .contacting iframe{
+        width: 370px;
+        height: 400px;
+    }
+    .contacting .contact-us{
+        width: 370px;
+        margin-left: -60px;
+    }
+    .contacting .image .second{
+        margin-left: 10px;
+    }
+    .contacting .image img{
+        width: 370px;
+        height: 300px;
+    }
+}
+/* contact section */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2){
+    form{
+        display: block;
+    }
+    form .text #name 
+    ,#email{
+        width: 370px;
+        padding: 3px 15px ;
+    }
+    form .text #name{
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    form .text #email{
+        margin-left: 0px;
+    }
+    form .project input{
+        width: 370px;
+        margin: 15px 0;
+    }
+    form textarea{
+        width: 370px;
+        margin: 0;
+    }
+    .form1{
+        padding-left: 5px;
+        padding-bottom: 30px;
+    }
+    .form1 .btn{
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+}
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1){
+    form .text #name 
+    ,#email{
+        width: 350px;
+        margin-bottom: 15px;
+    }
+    form .project input{
+        width: 754px;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+    form textarea{
+        width:754px;
+        margin: 0;
+    }
+    .form1{
+        padding-left: 5px;
+        padding-bottom: 30px;
+    }
+    .form1 .btn{
+        margin-left: 300px;
+        margin-top: 10px;
+    }
+}
